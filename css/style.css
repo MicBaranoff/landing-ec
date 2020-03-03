@@ -1,0 +1,608 @@
+@font-face {
+  font-family: OpenSans;
+  src: url('../fonts/OpenSans-Regular.ttf');
+}
+@font-face {
+  font-family: OpenSansL;
+  src: url('../fonts/OpenSans-Light.ttf');
+}
+@font-face {
+  font-family: OpenSansBB;
+  src: url('../fonts/OpenSans-ExtraBold.ttf');
+}
+@font-face {
+  font-family: OpenSansB;
+  src: url('../fonts/OpenSans-Bold.ttf');
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+  -webkit-appearance: none;
+}
+* {
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+main {
+  display: block;
+}
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-family: OpenSans;
+  color: #000000;
+  overflow-x: hidden;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.holder {
+  width: 100%;
+  max-width: 1124px;
+  margin: 0 auto;
+}
+.sect_title {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.sect_title h2 {
+  font-family: OpenSansB;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 26px;
+  color: #34495e;
+  text-align: center;
+  margin: 0 30px;
+}
+.sect_title div {
+  position: relative;
+  width: 40px;
+  height: 3px;
+  background: #1c8802;
+  border-radius: 5px;
+}
+.sect_title div:first-child:after {
+  position: absolute;
+  top: -3px;
+  right: -20px;
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: #1c8802;
+  border-radius: 50%;
+}
+.sect_title div:last-child:after {
+  position: absolute;
+  top: -3px;
+  left: -20px;
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: #1c8802;
+  border-radius: 50%;
+}
+header {
+  width: 100%;
+}
+header .info {
+  width: 100%;
+  padding: 15px;
+}
+header .info > .holder {
+  padding: 0 15px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .info > .holder a.logo {
+  display: block;
+  width: 100px;
+}
+header .info > .holder a.logo img {
+  width: 100%;
+}
+header .info > .holder .tels {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .info > .holder .tels svg {
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+}
+header .info > .holder .tels .box a {
+  display: block;
+  color: #000000;
+  font-family: OpenSansB;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+header .info > .holder .tels .box a:last-child {
+  margin-bottom: 0;
+}
+header .info > .holder .adr {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .info > .holder .adr svg {
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+}
+header .info > .holder .adr span {
+  color: #000000;
+  font-family: OpenSansB;
+  font-size: 14px;
+  line-height: 23px;
+}
+header .info > .holder a.btn {
+  border: 4px solid #ecef09;
+  padding: 7px 70px;
+  border-radius: 50px;
+  text-align: center;
+  color: #000000;
+  font-family: OpenSansB;
+  font-size: 16px;
+  line-height: 23px;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+header .info > .holder a.btn:hover {
+  background: #ecef09;
+  color: #fff;
+}
+header .navbox {
+  width: 100%;
+  padding: 15px;
+  padding-bottom: 0;
+  background: #1c8802;
+}
+header .navbox nav {
+  width: 100%;
+  max-width: 768px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+header .navbox nav a {
+  color: #ffffff;
+  font-family: OpenSansB;
+  font-size: 14px;
+  line-height: 23px;
+  padding-bottom: 13px;
+  border-bottom: 3px solid transparent;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+header .navbox nav a:hover {
+  border-bottom: 3px solid #f1c40f;
+}
+section.mainbanner {
+  width: 100%;
+  padding: 0 15px;
+  background: #1c8802;
+  min-height: 600px;
+  padding-top: 70px;
+  padding-bottom: 100px;
+}
+section.mainbanner .holder .title h1 {
+  display: block;
+  font-family: OpenSansBB;
+  font-size: 36px;
+  color: #ffffff;
+  margin-bottom: 20px;
+  text-align: center;
+  line-height: 45px;
+}
+section.mainbanner .holder .title p {
+  display: block;
+  font-family: OpenSansBB;
+  font-size: 24px;
+  color: #f1c40f;
+  margin-bottom: 20px;
+  text-align: center;
+}
+section.mainbanner .holder > .box {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 70px;
+  position: relative;
+}
+section.mainbanner .holder > .box img {
+  position: absolute;
+  right: -130px;
+  top: -100px;
+}
+section.mainbanner .holder .form {
+  width: 100%;
+  max-width: 650px;
+  padding: 40px 20px;
+  background: #cccccc;
+  border-radius: 20px;
+}
+section.mainbanner .holder .form p {
+  display: block;
+  font-family: OpenSans;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 22px;
+  color: #1e3799;
+  margin-bottom: 10px;
+  text-align: center;
+}
+section.mainbanner .holder .form p span {
+  font-family: OpenSansB;
+}
+section.mainbanner .holder .form > span {
+  display: block;
+  font-family: OpenSans;
+  font-size: 15px;
+  text-align: center;
+  line-height: 25px;
+  margin-bottom: 20px;
+}
+section.mainbanner .holder .form form {
+  width: 100%;
+}
+section.mainbanner .holder .form form .box {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+section.mainbanner .holder .form form .box input {
+  width: 100%;
+  max-width: 290px;
+  padding: 13px 25px;
+  background: none;
+  border: 1px solid #718093;
+  display: block;
+  font-family: OpenSans;
+  font-size: 15px;
+  border-radius: 30px;
+  margin-bottom: 30px;
+}
+section.mainbanner .holder .form form .box input::-webkit-input-placeholder {
+  color: #718093;
+}
+section.mainbanner .holder .form form .box input::-moz-placeholder {
+  color: #718093;
+}
+section.mainbanner .holder .form form .box input:-ms-input-placeholder {
+  color: #718093;
+}
+section.mainbanner .holder .form form .box input::-ms-input-placeholder {
+  color: #718093;
+}
+section.mainbanner .holder .form form .box input::placeholder {
+  color: #718093;
+}
+section.mainbanner .holder .form form button[type=submit] {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 230px;
+  padding: 13px 45px;
+  background: #1e3799;
+  border: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  color: #fff;
+  font-family: OpenSansB;
+  font-size: 15px;
+  border-radius: 30px;
+}
+section.mainbanner .holder .form form button[type=submit]:hover svg {
+  -webkit-transform: translateX(5px);
+      -ms-transform: translateX(5px);
+          transform: translateX(5px);
+}
+section.mainbanner .holder .form form button[type=submit] svg {
+  width: 20px;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+section.mainbanner .holder .form form button[type=submit] svg g g path {
+  fill: #fff;
+}
+section.aboutus {
+  width: 100%;
+  padding: 0 15px;
+  padding-top: 100px;
+}
+section.aboutus .holder .sect_title {
+  margin-bottom: 50px;
+}
+section.aboutus .holder .text {
+  max-width: 800px;
+}
+section.aboutus .holder .text p {
+  display: block;
+  font-family: OpenSans;
+  color: #2d3436;
+  font-size: 14px;
+  line-height: 25px;
+  margin-bottom: 15px;
+}
+section.aboutus .holder .text p span {
+  font-weight: bold;
+}
+section.aboutus .holder .text ul li {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+section.aboutus .holder .text ul li img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+section.choose {
+  width: 100%;
+  padding-top: 100px;
+}
+section.choose .sect_title {
+  margin: 0 auto;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 50px;
+}
+section.choose .box {
+  width: 100%;
+}
+section.choose .box .row {
+  padding: 30px 15px;
+}
+section.choose .box .row:nth-child(even) {
+  background: #cacaca;
+}
+section.choose .box .row .holder {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+section.choose .box .row .holder .item {
+  width: 100%;
+  max-width: 470px;
+}
+section.choose .box .row .holder .item a.btn {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  padding: 13px 45px;
+  background: #1c8802;
+  cursor: pointer;
+  color: #fff;
+  font-family: OpenSansB;
+  text-transform: uppercase;
+  font-size: 16px;
+  border-radius: 30px;
+  text-align: center;
+}
+section.choose .box .row .holder .item p {
+  margin-top: 15px;
+  display: block;
+  font-family: OpenSans;
+  color: #2d3436;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 15px;
+  text-align: center;
+  min-height: 100px;
+}
+section.choose .box .row .holder .item p span {
+  font-weight: bold;
+}
+section.choose .box .row .holder .item .img {
+  width: 80%;
+  margin: 0 auto;
+  height: 200px;
+  border-radius: 100px;
+}
+section.ecology {
+  width: 100%;
+  padding-top: 100px;
+}
+section.ecology .sect_title {
+  margin: 0 auto;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 50px;
+}
+section.ecology p {
+  display: block;
+  font-family: OpenSans;
+  color: #2d3436;
+  font-size: 14px;
+  line-height: 25px;
+  margin-bottom: 15px;
+}
+section.ecology p span {
+  font-weight: bold;
+}

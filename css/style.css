@@ -262,11 +262,23 @@ header .info > .holder .tels svg {
   margin-right: 20px;
 }
 header .info > .holder .tels .box a {
-  display: block;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #000000;
   font-family: OpenSansB;
   margin-bottom: 10px;
   font-size: 14px;
+}
+header .info > .holder .tels .box a img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
 }
 header .info > .holder .tels .box a:last-child {
   margin-bottom: 0;
@@ -470,6 +482,7 @@ section.mainbanner .holder .form form button[type=submit] {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  text-align: left;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
@@ -974,6 +987,7 @@ section.giftsForm .holder .box .form form button[type=submit] {
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
+  text-align: left;
   color: #fff;
   font-family: OpenSansB;
   font-size: 15px;
@@ -1201,11 +1215,23 @@ footer .holder .tels svg path {
   fill: #ffffff;
 }
 footer .holder .tels .box a {
-  display: block;
-  color: #ffffff;
-  font-family: OpenSans;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #000000;
+  font-family: OpenSansB;
   margin-bottom: 10px;
   font-size: 14px;
+}
+footer .holder .tels .box a img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
 }
 footer .holder .tels .box a:last-child {
   margin-bottom: 0;

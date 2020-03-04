@@ -1115,6 +1115,17 @@ footer .holder {
 footer .holder > .box {
   padding: 10px 0;
 }
+footer .holder > .box p {
+  display: block;
+  margin-top: 20px;
+  color: #ffffff;
+  font-family: OpenSans;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+footer .holder > .box p a {
+  color: #fff;
+}
 footer .holder > .box h3 {
   display: block;
   font-family: OpenSansBB;
@@ -1307,6 +1318,7 @@ footer .holder .adr span {
   }
   section.aboutus {
     padding-top: 50px;
+    margin-top: 0;
   }
   section.choose {
     padding-top: 50px;

@@ -3,7 +3,18 @@ $(document).ready(function(){
 
     $('.burger').on('click', function(){
         $('.navbox').slideToggle(300);
-    })
+    });
+
+    $('.link').on('click', function(event) {
+		event.preventDefault();
+		var id  = $(this).attr('href'),
+		top = $(id).offset().top;
+		$('html, body').animate({scrollTop: top}, 800);
+		setTimeout(function() {
+			window.location = id;
+		}, 700);
+    });
+
 
     $('.partners_slider').slick({
         dots: false,

@@ -386,7 +386,7 @@ section.mainbanner .holder > .box {
 section.mainbanner .holder > .box img {
   position: absolute;
   right: -182px;
-  top: -102px;
+  top: -108px;
 }
 section.mainbanner .holder .form {
   width: 100%;
@@ -506,7 +506,7 @@ section.aboutus {
   background-position: top right;
   background-size: contain;
   background-repeat: no-repeat;
-  margin-top: -180px;
+  margin-top: -100px;
 }
 section.aboutus .holder .sect_title {
   margin-bottom: 50px;
@@ -554,9 +554,6 @@ section.choose .box {
 }
 section.choose .box .row {
   padding: 30px 15px;
-}
-section.choose .box .row:nth-child(even) {
-  background: #cacaca;
 }
 section.choose .box .row .holder {
   display: -webkit-box;
@@ -1112,8 +1109,54 @@ footer .holder {
   display: -ms-flexbox;
   display: flex;
 }
+footer .holder .mapbox {
+  margin-right: 20px;
+  padding-right: 20px;
+}
+footer .holder .mapbox .box h3 {
+  display: block;
+  font-family: OpenSansBB;
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+footer .holder .mapbox .box .adr {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer .holder .mapbox .box .adr svg {
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+}
+footer .holder .mapbox .box .adr svg path {
+  fill: #ffffff;
+}
+footer .holder .mapbox .box .adr span {
+  color: #ffffff;
+  font-family: OpenSans;
+  font-size: 14px;
+  line-height: 23px;
+}
+footer .holder .mapbox .map {
+  width: 290px;
+  height: 200px;
+  margin-top: 20px;
+}
+footer .holder .mapbox .map iframe {
+  width: inherit;
+  height: inherit;
+}
 footer .holder > .box {
-  padding: 10px 0;
+  padding-left: 20px;
+  border-left: 1px solid #fff;
 }
 footer .holder > .box p {
   display: block;
@@ -1196,17 +1239,61 @@ footer .holder .adr span {
     background-size: cover;
   }
 }
-@media screen and (min-width: 1442px) {
+@media screen and (max-width: 1920px) {
   section.giftsForm .holder {
     max-width: 1124px;
     padding-top: 100px;
   }
   section.giftsForm .holder .box img {
-    right: -117px;
-    top: -349px;
+    right: -280px;
+    top: -398px;
+  }
+}
+@media screen and (max-width: 1845px) {
+  section.mainbanner .holder .box img {
+    right: -127px;
+    top: -99px;
+  }
+  section.giftsForm .holder {
+    max-width: 1124px;
+    padding-top: 100px;
+  }
+  section.giftsForm .holder .box img {
+    right: -280px;
+    top: -403px;
+  }
+}
+@media screen and (max-width: 1750px) {
+  section.giftsForm .holder .box img {
+    right: -202px;
+    top: -396px;
+  }
+  section.mainbanner .holder .box img {
+    right: -75px;
+    top: -78px;
+    width: 58%;
+  }
+}
+@media screen and (max-width: 1600px) {
+  section.mainbanner .holder .box img {
+    right: -38px;
+    top: -52px;
+    width: 55%;
   }
 }
 @media screen and (max-width: 1441px) {
+  section.mainbanner {
+    background-size: 110% 870px;
+  }
+  section.mainbanner .holder .box img {
+    right: -46px;
+    top: -30px;
+    width: 53%;
+  }
+  section.giftsForm .holder .box img {
+    right: -92px;
+    top: -393px;
+  }
   section.aboutus {
     background-size: 600px;
   }
@@ -1442,7 +1529,9 @@ footer .holder .adr span {
             flex-direction: column;
   }
   footer .holder .box {
-    margin-bottom: 20px;
+    margin-top: 20px;
+    padding-left: 0;
+    border: none;
   }
   footer .holder .box:first-child {
     margin-right: 0;

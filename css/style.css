@@ -349,10 +349,13 @@ header .navbox nav a:hover {
 section.mainbanner {
   width: 100%;
   padding: 0 15px;
-  background: #1c8802;
+  background-image: url(../img/bg1.png);
+  background-position: 0 -150px;
+  background-size: 100% 870px;
+  background-repeat: no-repeat;
   min-height: 600px;
   padding-top: 50px;
-  padding-bottom: 150px;
+  padding-bottom: 175px;
 }
 section.mainbanner .holder .title h1 {
   display: block;
@@ -382,8 +385,8 @@ section.mainbanner .holder > .box {
 }
 section.mainbanner .holder > .box img {
   position: absolute;
-  right: -130px;
-  top: -100px;
+  right: -182px;
+  top: -102px;
 }
 section.mainbanner .holder .form {
   width: 100%;
@@ -391,6 +394,8 @@ section.mainbanner .holder .form {
   padding: 40px 20px;
   background: #cccccc;
   border-radius: 20px;
+  -webkit-box-shadow: 2px 2px 33px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 2px 33px -1px rgba(0, 0, 0, 0.75);
 }
 section.mainbanner .holder .form p {
   display: block;
@@ -496,7 +501,12 @@ section.mainbanner .holder .form form button[type=submit] svg g g path {
 section.aboutus {
   width: 100%;
   padding: 0 15px;
-  padding-top: 100px;
+  padding-top: 200px;
+  background-image: url(../img/bg2.png);
+  background-position: top right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: -180px;
 }
 section.aboutus .holder .sect_title {
   margin-bottom: 50px;
@@ -681,7 +691,10 @@ section.materials .right .item h3 {
 section.partners {
   width: 100%;
   padding: 70px 15px;
-  background: #1c8802;
+  background-image: url(../img/bg3.png);
+  background-position: center;
+  background-size: 100% 450px;
+  background-repeat: no-repeat;
 }
 section.partners .holder .sect_title {
   margin-bottom: 50px;
@@ -811,9 +824,19 @@ section.certificates .holder .certificates_slider_nav .next svg {
           transform: rotate(180deg);
 }
 section.giftsForm {
+  margin-top: -100px;
   width: 100%;
-  padding: 50px 15px;
-  background: #1c8802;
+  padding: 0 15px;
+  padding-top: 100px;
+  padding-bottom: 200px;
+  background-image: url(../img/bg4.png);
+  background-position: top right;
+  background-size: 110% 800px;
+  background-repeat: no-repeat;
+}
+section.giftsForm .holder {
+  padding-top: 120px;
+  max-width: 1;
 }
 section.giftsForm .holder .title {
   width: 100%;
@@ -852,6 +875,14 @@ section.giftsForm .holder .title > span span {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 22px;
+}
+section.giftsForm .holder .box {
+  position: relative;
+}
+section.giftsForm .holder .box img {
+  position: absolute;
+  right: -78px;
+  top: -380px;
 }
 section.giftsForm .holder .box .form {
   width: 100%;
@@ -1149,14 +1180,50 @@ footer .holder .adr span {
   font-size: 14px;
   line-height: 23px;
 }
+@media screen and (min-width: 1921px) {
+  section.mainbanner {
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 1442px) {
+  section.giftsForm .holder {
+    max-width: 1124px;
+    padding-top: 100px;
+  }
+  section.giftsForm .holder .box img {
+    right: -117px;
+    top: -349px;
+  }
+}
+@media screen and (max-width: 1441px) {
+  section.aboutus {
+    background-size: 600px;
+  }
+  section.aboutus .holder .text {
+    max-width: 600px;
+  }
+}
+@media screen and (max-width: 1251px) {
+  section.aboutus {
+    background-size: 500px;
+  }
+  section.aboutus .holder .text {
+    max-width: 500px;
+  }
+}
 @media screen and (max-width: 1155px) {
   section.mainbanner .holder > .box img {
     width: 50%;
+  }
+  section.giftsForm .holder .box img {
+    display: none;
   }
 }
 @media screen and (max-width: 1024px) {
   section.mainbanner .holder > .box img {
     width: 60%;
+    right: -37px;
+    top: -34px;
   }
   section.mainbanner .holder .form {
     max-width: 400px;
@@ -1175,6 +1242,12 @@ footer .holder .adr span {
   }
   section.choose .box .row .item {
     margin: 0 5px;
+  }
+  section.aboutus {
+    background: none;
+  }
+  section.aboutus .holder .text {
+    max-width: 800px;
   }
 }
 @media screen and (max-width: 900px) {
@@ -1209,6 +1282,11 @@ footer .holder .adr span {
 @media screen and (max-width: 768px) {
   .sect_title h2 {
     font-size: 20px;
+  }
+  section.mainbanner {
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 50px;
   }
   section.mainbanner .holder .title h1 {
     font-size: 24px;
@@ -1286,6 +1364,9 @@ footer .holder .adr span {
   section.clients {
     padding-top: 50px;
   }
+  section.giftsForm {
+    background-size: cover;
+  }
   section.giftsForm .holder .title {
     margin: 0 auto;
   }
@@ -1327,6 +1408,9 @@ footer .holder .adr span {
   section.orders .box .row .item {
     margin: 0 5px;
     margin-bottom: 50px;
+  }
+  section.partners {
+    background-size: cover;
   }
 }
 @media screen and (max-width: 550px) {
